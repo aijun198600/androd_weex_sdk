@@ -53,7 +53,7 @@ android {
 
     useLibrary 'org.apache.http.legacy'
     copy {
-        from '../../pre-build'
+        from '../pre-build'
         into new File(projectDir,"assets")
         include 'native-bundle-main.js'
         rename('native-bundle-main.js','main.js')
